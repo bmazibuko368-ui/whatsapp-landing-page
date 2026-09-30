@@ -13,13 +13,13 @@
       <span class="badge">24/7 Rapid Response</span>
       <h1>Fast Emergency Plumbing in Your Area</h1>
       <p>Burst pipes, geysers, and blocked drains repaired by certified local experts.</p>
-      <a href="tel:0821234567" class="btn btn-primary">Call Now: 082 123 4567</a>
+      <a href="tel:+27821234567" class="btn btn-primary">Call Now: 082 123 4567</a>
     </div>
   </header>
 
   <section class="form-section container">
     <h2>Request an Immediate Callback</h2>
-    <!-- You will replace FORMSPREE_ID in Step 4 -->
+   <input type="text" name="_bot_check" style="display:none">
     <form action="https://formspree.io/f/mljdzben" method="POST">
       <div class="form-group">
         <label for="name">Your Name</label>
@@ -40,7 +40,10 @@
           <option value="Leak">Water Leak</option>
         </select>
       </div>
-
+<div class="form-group" style="display: flex; gap: 10px; align-items: start;">
+  <input type="checkbox" id="popia" name="popia_consent" required style="width: auto; margin-top: 4px;">
+  <label for="popia" style="font-size: 0.85rem; font-weight: normal;">I consent to this business storing my details to contact me regarding my request.</label>
+</div>
       <button type="submit" class="btn btn-secondary">Request Call</button>
     </form>
   </section>
